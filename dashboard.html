@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Islamic Homeschooling</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-green-50 font-sans">
+
+  <!-- Header -->
+  <header class="bg-green-800 text-white p-4 text-center text-2xl font-bold">
+    📊 Student Dashboard
+  </header>
+
+  <!-- Tasks -->
+  <main class="container mx-auto py-8">
+    <h2 class="text-2xl font-bold text-green-900 mb-6">Today's Tasks</h2>
+    <ul class="space-y-4">
+      <li class="bg-white shadow rounded-lg p-4 flex justify-between items-center">
+        <span>🕌 Fajr Prayer</span>
+        <button onclick="trackPrayer('Fajr')" class="px-4 py-2 bg-green-700 text-white rounded hover:bg-green-900">Done</button>
+      </li>
+      <li class="bg-white shadow rounded-lg p-4 flex justify-between items-center">
+        <span>📖 Read Surah Al-Fatiha</span>
+        <button onclick="trackPrayer('Surah Al-Fatiha')" class="px-4 py-2 bg-green-700 text-white rounded hover:bg-green-900">Done</button>
+      </li>
+      <li class="bg-white shadow rounded-lg p-4 flex justify-between items-center">
+        <span>📚 Math Lesson: Fractions</span>
+        <button onclick="trackPrayer('Math Lesson')" class="px-4 py-2 bg-green-700 text-white rounded hover:bg-green-900">Done</button>
+      </li>
+    </ul>
+  </main>
+
+</body>
+</html>
